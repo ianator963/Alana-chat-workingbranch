@@ -1,6 +1,5 @@
 <?php
-// Include the database connection file
-session_start(); // Use @ to suppress the warning
+require_once "auth.php";
 
 $path = '../../../'; // Adjust the path if necessary
 require $path . 'dbConnect.inc'; // Include the database connection file

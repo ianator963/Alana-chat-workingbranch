@@ -2,16 +2,7 @@
 ini_set('upload_max_filesize', '8M');
 ini_set('post_max_size', '10M');
 
-session_start();
-
-$isLoggedIn = isset($_SESSION['user_id']); // Assume user_id is stored in session
-
-// Check if the user is logged in
-if (!isset($_SESSION['user_id'])) {
-    // Redirect to login page if the user is not logged in
-    header('Location: login.php');
-    exit();
-}
+require_once "auth.php";
 
 // Include the database connection
 $path = '../../../'; // Adjust path if necessary

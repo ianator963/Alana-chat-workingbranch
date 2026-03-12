@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once "auth.php";
 
 // Load database connection
 $path = '../../../';
